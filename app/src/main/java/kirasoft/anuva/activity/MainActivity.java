@@ -1,7 +1,9 @@
-package kirasoft.anuva;
+package kirasoft.anuva.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import kirasoft.anuva.R;
 
 public class MainActivity extends AppCompatActivity {
 
