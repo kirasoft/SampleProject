@@ -1,14 +1,12 @@
 package kirasoft.anuva.fragment;
 
 import android.app.Fragment;
-import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -44,7 +42,7 @@ public class ListFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance) {
-        View rootView = inflater.inflate(R.layout.fragment_list, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_buttons_list, container, false);
 
         //use butterknife to reduce boilerplate. (no view = findViewById..)
         ButterKnife.bind(this, rootView);

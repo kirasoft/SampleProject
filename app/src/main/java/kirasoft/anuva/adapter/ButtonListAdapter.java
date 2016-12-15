@@ -58,7 +58,4 @@ public class ButtonListAdapter extends ArrayAdapter<Drawable> {
             ButterKnife.bind(this, view);
         }
     }
-
-
-
 }
