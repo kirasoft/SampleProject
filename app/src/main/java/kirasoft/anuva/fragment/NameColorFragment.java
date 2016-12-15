@@ -40,7 +40,7 @@ public class NameColorFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance) {
-        View rootView = inflater.inflate(R.layout.fragment_numbers_list, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_name_color, container, false);
         //use Butterknife to reduce boilerplate. (no view = findViewById..)
         ButterKnife.bind(this, rootView);
 
