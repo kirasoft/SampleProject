@@ -10,6 +10,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import kirasoft.anuva.R;
 import kirasoft.anuva.fragment.ButtonsFragment;
+import kirasoft.anuva.fragment.NameColorFragment;
 import kirasoft.anuva.fragment.NumbersFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -45,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
     public void radioSecondClick() {
         getFragmentManager().beginTransaction().replace(R.id.container,
                 new NumbersFragment(), SECOND_FRAGMENT_TAG).addToBackStack(TAG).commit();
+    }
+
+    //add Name Color Fragment to users view
+    @OnClick(R.id.radio_third)
+    public void radioThirdClick() {
+        getFragmentManager().beginTransaction().replace(R.id.container,
+                new NameColorFragment(), THIRD_FRAGMENT_TAG).addToBackStack(TAG).commit();
     }
 
 
