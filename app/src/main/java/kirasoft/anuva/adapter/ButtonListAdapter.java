@@ -50,7 +50,7 @@ public class ButtonListAdapter extends ArrayAdapter<Drawable> {
 
     //button list view holder
     //container for a reference to the imageview inside each item
-    private static class ButtonListViewHolder{
+    static class ButtonListViewHolder{
         @BindView(R.id.button_list_image_view)
         ImageView image;
 

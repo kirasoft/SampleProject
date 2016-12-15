@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer-array name="list_items">
-        <item>@drawable/btn_camera_up</item>
-        <item>@drawable/btn_climate_up</item>
-        <item>@drawable/btn_experience_up</item>
-        <item>@drawable/btn_fireplace_up</item>
-        <item>@drawable/btn_garage_up</item>
-        <item>@drawable/btn_gate_up</item>
-        <item>@drawable/btn_light_up</item>
-        <item>@drawable/btn_locks_up</item>
-        <item>@drawable/btn_moods_up</item>
-        <item>@drawable/btn_music_up</item>
-        <item>@drawable/btn_pool_up</item>
-        <item>@drawable/btn_security_up</item>
-        <item>@drawable/btn_sprinkler_up</item>
-        <item>@drawable/btn_tv_up</item>
-        <item>@drawable/btn_window_up</item>
-    </integer-array>
+
 
 </resources>

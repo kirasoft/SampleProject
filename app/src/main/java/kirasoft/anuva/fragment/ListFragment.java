@@ -29,6 +29,12 @@ public class ListFragment extends Fragment {
     ListView listView;
 
 
+    private static int[] drawableIds = {
+            R.drawable.btn_camera_up, R.drawable.btn_climate_up, R.drawable.btn_experience_up, R.drawable.btn_fireplace_up,
+            R.drawable.btn_garage_up, R.drawable.btn_gate_up, R.drawable.btn_light_up,
+            R.drawable.btn_locks_up, R.drawable.btn_music_up, R.drawable.btn_pool_up,
+            R.drawable.btn_security_up, R.drawable.btn_sprinkler_up, R.drawable.btn_tv_up, R.drawable.btn_window_up
+    };
 
 
     @Override
@@ -41,7 +47,7 @@ public class ListFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_list, container, false);
 
         //use butterknife to reduce boilerplate. (no view = findViewById..)
-        ButterKnife.bind(this, getActivity());
+        ButterKnife.bind(this, rootView);
 
         ButtonListAdapter adapter = new ButtonListAdapter(getActivity(), 0, getButtonDrawablesList());
         listView.setAdapter(adapter);
@@ -51,13 +57,15 @@ public class ListFragment extends Fragment {
 
 
     //Get Drawables from resources and return as list of drawables
-    private List<Drawable> getButtonDrawablesList(){
+    private List<Drawable> getButtonDrawablesList() {
+
         List<Drawable> drawableList = new ArrayList<>();
-        for(int id : getResources().getIntArray(R.array.list_items)){
+
+        for (int id : drawableIds) {
             //add each drawable by id found in int-array in arrays.xml
             drawableList.add(ContextCompat.getDrawable(getActivity(), id));
         }
         return drawableList;
     }
-
 }
+
