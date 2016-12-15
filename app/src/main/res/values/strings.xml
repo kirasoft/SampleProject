@@ -5,4 +5,9 @@
     <string name="third_fragment">Third Fragment</string>
     <string name="increase">Increase</string>
     <string name="add_name">Add Name</string>
+    <string name="name">Name</string>
+    <string name="blue">Blue</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="submit">Submit</string>
 </resources>
