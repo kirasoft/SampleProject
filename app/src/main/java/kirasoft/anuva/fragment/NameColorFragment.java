@@ -66,15 +66,10 @@ public class NameColorFragment extends Fragment {
         final Dialog dialog = new Dialog(getActivity());
         dialog.setContentView(R.layout.dialog_name_color);
         dialog.setCancelable(true);
+
         final RadioGroup colorGroup = (RadioGroup) dialog.findViewById(R.id.dialog_radio_group);
         final EditText nameEdit = (EditText) dialog.findViewById(R.id.edit_name);
         colorGroup.check(R.id.radio_red);
-        colorGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-            }
-        });
 
         Button submit = (Button)dialog.findViewById(R.id.button_submit);
         submit.setOnClickListener(new View.OnClickListener() {
@@ -104,17 +99,16 @@ public class NameColorFragment extends Fragment {
                         break;
                 }
 
-
+                //create new nameblock from user choice and add it to list view
                 NameBlock nameBlock = new NameBlock(nbName, nbColor);
                 nbList.add(nameBlock);
                 colorAdapter.notifyDataSetChanged();
+
                 dialog.dismiss();
             }
         });
 
-
         dialog.show();
-
     }
 
 

@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:text="@string/third_fragment"
             android:id="@+id/radio_third"/>
-        
+
     </RadioGroup>
 
     <FrameLayout

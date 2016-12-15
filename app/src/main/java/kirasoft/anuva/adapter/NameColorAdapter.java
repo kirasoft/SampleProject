@@ -33,6 +33,7 @@ public class NameColorAdapter extends ArrayAdapter<NameBlock> {
         NameColorViewHolder viewHolder;
         NameBlock nb = getItem(position);
 
+        //ensure that views can be reused
         if(view == null) {
             view = LayoutInflater.from(getContext()).inflate(R.layout.name_color_list_item, null);
             viewHolder = new NameColorViewHolder(view);
@@ -49,6 +50,7 @@ public class NameColorAdapter extends ArrayAdapter<NameBlock> {
         return view;
     }
 
+    //view holder pattern to bind views to an object
     static class NameColorViewHolder {
 
         @BindView(R.id.name_text)
