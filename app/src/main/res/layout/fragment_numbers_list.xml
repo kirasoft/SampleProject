@@ -15,6 +15,8 @@
         android:minWidth="100dp"
         android:layout_height="wrap_content"
         android:id="@+id/list_view"
-        android:layout_alignTop="@id/button_increase"></ListView>
+        android:layout_above="@+id/button_increase"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"></ListView>
 
 </RelativeLayout>

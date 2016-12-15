@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //using Butterknife's onclick removes boilerplate.
-    //add
+    //add Buttons List Fragment to users view
     @OnClick(R.id.radio_first)
     public void radioFirstClick(){
         getFragmentManager().beginTransaction().replace(R.id.container,

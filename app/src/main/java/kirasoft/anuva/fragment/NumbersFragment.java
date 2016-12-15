@@ -42,6 +42,9 @@ public class NumbersFragment extends Fragment {
         //use Butterknife to reduce boilerplate. (no view = findViewById..)
         ButterKnife.bind(this, rootView);
 
+        countList.push(1);
+        countList.push(2);
+        countList.push(3);
         adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, countList);
         listView.setAdapter(adapter);
         return rootView;
