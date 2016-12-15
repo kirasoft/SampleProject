@@ -21,7 +21,7 @@ import kirasoft.anuva.adapter.ButtonListAdapter;
  * Created by Kota on 12/14/2016.
  */
 
-public class ListFragment extends Fragment {
+public class ButtonsFragment extends Fragment {
 
     @BindView(R.id.list_view)
     ListView listView;

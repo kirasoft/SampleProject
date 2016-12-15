@@ -52,12 +52,19 @@ public class NumbersFragment extends Fragment {
     @OnClick(R.id.button_increase)
     public void increaseButtonClick(){
 
-        Integer newNum = countList.peek() + 1;
+        Integer newNum = 1;
+
+        if(!countList.empty()){
+            newNum = countList.peek() + 1;
+        }
+
         if(newNum > 20) {
             newNum = 1;
         }
+
         countList.push(newNum);
         adapter.notifyDataSetChanged();
+
     }
 
 }

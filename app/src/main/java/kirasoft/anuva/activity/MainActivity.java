@@ -3,14 +3,14 @@ package kirasoft.anuva.activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.FrameLayout;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import kirasoft.anuva.R;
-import kirasoft.anuva.fragment.ListFragment;
+import kirasoft.anuva.fragment.ButtonsFragment;
+import kirasoft.anuva.fragment.NumbersFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,10 +33,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //using Butterknife's onclick removes boilerplate.
+    //add
     @OnClick(R.id.radio_first)
     public void radioFirstClick(){
         getFragmentManager().beginTransaction().replace(R.id.container,
-                new ListFragment(), FIRST_FRAGMENT_TAG).addToBackStack(TAG).commit();
+                new ButtonsFragment(), FIRST_FRAGMENT_TAG).addToBackStack(TAG).commit();
+    }
+
+    //add Numbers Fragment to users view
+    @OnClick(R.id.radio_second)
+    public void radioSecondClick() {
+        getFragmentManager().beginTransaction().replace(R.id.container,
+                new NumbersFragment(), SECOND_FRAGMENT_TAG).addToBackStack(TAG).commit();
     }
 
 
