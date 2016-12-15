@@ -25,15 +25,15 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/third_fragment"
-            android:id="@+id/radio_third"/>
+            android:text="@string/second_fragment"
+            android:id="@+id/radio_second"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/second_fragment"
-            android:id="@+id/radio_second"/>
-
+            android:text="@string/third_fragment"
+            android:id="@+id/radio_third"/>
+        
     </RadioGroup>
 
     <FrameLayout
